@@ -21,6 +21,7 @@ _HAS_FIRMWARE_PARSERS = find_spec("firmware_parsers") is not None
 REQUIRED_TOOLS = {
     "7-zip or p7zip": [SEVEN_ZIP_EXECUTABLE, P7ZIP_EXECUTABLE],
     "erofs-utils": ["fsck.erofs"],
+    "e2fsprogs": ["debugfs"],
 }
 
 if not _HAS_FIRMWARE_PARSERS:
